@@ -1,0 +1,62 @@
+html{
+  background-color: darkcyan;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 60px;
+}
+
+.logo{
+  margin: 0 0 0 60px;
+  }
+
+.main {
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.main button{
+    font-size: 15px;
+    margin: 10px;
+    border: none;
+}
+
+#btn1{
+    background: #0A3871;
+    color: white;
+    width: 240px;
+    height: 90px;
+    border-radius: 20px;
+}
+
+#btn2{
+    background: #E5E5E5;
+    color: #0A3871;
+    width: 200px;
+    height: 100%;
+    border-radius: 17px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  margin-top: 30px;
+  color: #0f161b;
+}
+
+.linkedin, .github{
+  margin: 0 0 0 10px; 
+  color: #0A3871;
+}
+
+.linkedin:hover, .github:hover{
+  color: #ffffff;
+}
