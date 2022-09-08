@@ -18,7 +18,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 45px;
 }
 
@@ -111,10 +111,10 @@ header {
   } 
 
   .fields{
-    height: 3px;
-  }
 
- .fields input {
+  }
+  
+  .fields input {
   font-size: 40px;
   color: #000000;
   background:#ffffff;
@@ -127,13 +127,13 @@ header {
   background-color:#008b8b;
   border:none;
   border-bottom:2px solid #0A3871;
-  margin-top: 330px; 
+  margin-top: 365px; 
 }
 
 .not-in-word > input{
   font-size: 24px;
   color: #000000;
-  background: #008b8b;
+  background: darkcyan;
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
@@ -141,8 +141,7 @@ header {
   height: 40px;
   color: #495057;
   border:none;
-
-  margin-top: 380px;
+  margin-bottom: 50px;
   font-family: 'Inter';
 }
 
