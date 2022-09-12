@@ -16,129 +16,15 @@ header {
 .main {
   height: 560px;
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
   margin-top: 45px;
 }
 
-.item-1 {
-  position: absolute;
-  width: 200px;
-  border-top: 5px solid #0A3871;
-  top: 470px;
-  left:640px;
-}
-
-.item-2 {
-  position: absolute;
-  border-left: 5px solid #0A3871;
-  height:270px;
-  top: 202px;
-  left: 690px;
-}
-
-.item-3 {
-  position: absolute;
-  width: 105px;
-  border-top: 5px solid #0A3871;
-  top: 200px;
-  left: 690px;
-  }
-
-  .item-4 {
-    position: absolute;
-    border-left: 5px solid #0A3871;
-    height:55px;
-    top: 200px;
-    left: 790px;
-  }
-
-  .item-5 {
-    height:45px;
-    width:45px;
-    border: 5px solid #0A3871;
-    -moz-border-radius:50px;
-    -webkit-border-radius:50px;
-    border-radius: 50px;
-    position: absolute;
-    top:255px;
-    left: 764px;
-  }
-
-  .item-6 {
-    position: absolute;
-    border-left: 5px solid #0A3871;
-    height:70px;
-    top: 308px;
-    left: 790px;
-  }
-
-  .item-7 {
-    position: absolute;
-    border-left: 5px solid #0A3871;
-    height:70px;
-    top: 302px;
-    left: 805px;
-    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
-  }
-
-  .item-8{
-    position: absolute;
-    border-left: 5px solid #0A3871;
-    height:70px;
-    top: 302px;
-    left: 775px;
-    transform:rotate(30deg);
-  } 
-
-  .item-9 {
-    position: absolute;
-    border-left: 5px solid #0A3871;
-    height:70px;
-    top: 370px;
-    left: 807px;
-    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
-  }
-
-  .item-10 {
-    position: absolute;
-    border-left: 5px solid #0A3871;
-    height:70px;
-    top: 370px;
-    left: 774px;
-    transform: rotate(30deg);
-  } 
-  
-  .fields input {
-  font-size: 40px;
-  color: #000000;
-  background:#ffffff;
+.canvas{
+  display: flex;
   justify-content: center;
-  text-align: center;
-  text-transform: uppercase;
-  width: 41px;
-  height: 40px;
-  color: #fff;
-  background-color:#008b8b;
-  border:none;
-  border-bottom:2px solid #0A3871;
-  margin-top: 365px; 
-}
-
-.not-in-word > input{
-  font-size: 24px;
-  color: #000000;
-  background: darkcyan;
-  justify-content: center;
-  text-align: center;
-  text-transform: uppercase;
-  width: 24px;
-  height: 40px;
-  color: #495057;
-  border:none;
-  margin-bottom: 50px;
-  font-family: 'Inter';
 }
 
 .btn{
@@ -158,7 +44,7 @@ header {
   
 }
 
-#btn1 {
+#iniciar-juego {
   color: #ffffff;
 }
 

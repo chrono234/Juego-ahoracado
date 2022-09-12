@@ -9,48 +9,20 @@
     <link rel="stylesheet" href="/Juego/style.css">
 </head>
 
-<body class="container">
+<body class="container" onLoad="iniciarJuego()">
   <header><img class="logo" src="/Imagenes/logo.png" alt="Logo de alura con letra a"></header>
-  <main class="main" >
-    <fieldset class="items">
-      <div class="item-1"></div>
-      <div class="item-2"></div>
-      <div class="item-3"></div>
-      <div class="item-4"></div>
-      <div class="item-5"></div>
-      <div class="item-6"></div>
-      <div class="item-7"></div>
-      <div class="item-8"></div>
-      <div class="item-9"></div>
-      <div class="item-10"></div>
-    </fieldset>
-
-    <fieldset class="fields">
-      <input maxlength="1" size="2" type="text" name="1" id="1">
-      <input maxlength="1" size="2" type="text" name="2" id="2">
-      <input maxlength="1" size="2" type="text" name="3" id="3">
-      <input maxlength="1" size="2" type="text" name="4" id="4">
-      <input maxlength="1" size="2" type="text" name="5" id="5">
-      <input maxlength="1" size="2" type="text" name="6" id="6">
-      <input maxlength="1" size="2" type="text" name="7" id="7">
-      <input maxlength="1" size="2" type="text" name="8" id="8">
-    </fieldset> 
+  <main class="main" >    
+    <div id="aparece ahorcado" class="canvas">
+    <canvas id="forca" width="660" height="400"></canvas>
     <section class="btn"> 
-      <a href="/Juego/index.html"><button id="btn1">Nuevo juego</button></a>
+      <button class="btn-iniciar" type="submit" value="iniciar-juego" id="iniciar-juego" onclick="iniciarJuego()">iniciar-juego</button>
       <a href="/Pagina-principal/index.html"><button id="btn2">Desistir</button></a>
     </section>
-    <fieldset class="not-in-word">
-      <input maxlength="1" size="2" type="text" name="a" id="a"> 
-      <input maxlength="1" size="2" type="text" name="b" id="b">
-      <input maxlength="1" size="2" type="text" name="c" id="c">
-      <input maxlength="1" size="2" type="text" name="d" id="d">
-      <input maxlength="1" size="2" type="text" name="e" id="e">
-      <input maxlength="1" size="2" type="text" name="f" id="f">
-      <input maxlength="1" size="2" type="text" name="g" id="g">
-      <input maxlength="1" size="2" type="text" name="h" id="h">
-    </fieldset>
+    </div>
+    <script src="index.js"></script>
+    <Script src="canvas.js"></Script>
   </main>
-</body>
+  </body>
 <footer class="footer">
     <p>&copy; Copyright Juego del ahorcado ♪ Jairo Orozco ♪ 2022</p>
     <a href="https://www.linkedin.com/in/jairo-orozco-5a8711b4" target="_blank" rel="noopener noreferrer">
@@ -61,3 +33,4 @@
       <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
     </svg></i></a>
 </html>
+
