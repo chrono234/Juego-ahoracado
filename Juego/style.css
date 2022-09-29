@@ -1,4 +1,5 @@
-html {
+/**inicio*/
+html{
   background-color: darkcyan;
 }
 
@@ -9,11 +10,99 @@ header {
   height: 60px;
 }
 
-.logo {
+.logo{
   margin: 0 0 0 60px;
-}
+  }
 
 .main {
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.main button{
+    font-size: 15px;
+    margin: 10px;
+    border: none;
+}
+
+#btn-inicio{
+    background: #0A3871;
+    color: white;
+    width: 240px;
+    height: 90px;
+    border-radius: 20px;
+}
+
+#btn-palabra-nueva{
+    background: #E5E5E5;
+    color: #0A3871;
+    width: 200px;
+    height: 100%;
+    border-radius: 17px;
+}
+
+/**agregar-palabra*/
+.box {
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+  margin-top: 45px;
+  gap: 150px;
+}
+
+.word input{
+  font-size: 32px;
+  border: none;
+  text-align: center;
+}
+
+.alert{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 0 0 10px;
+  font-size: 12px;
+  font-family:'Inter';
+  font-style: normal;
+  color: #495057;
+}
+
+.signal{
+  width: 12px;
+  height: 12px;
+}
+
+.alert:hover{
+  cursor: help;
+}
+
+ #btn-agregar-palabra, #btn-cancelar {
+  font-size: 16px;
+  background: #0A3871;
+  width: 210px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  margin: 5px;
+}
+
+  #btn-agregar-palabra{
+    color: white;
+}
+
+  #btn-cancelar{
+    background:  #E5E5E5;
+    color: #0A3871;
+}
+
+/**Pagina-del-juego*/
+#aparece-horca {
   height: 560px;
   display: flex;
   justify-content: center;
@@ -27,12 +116,13 @@ header {
   justify-content: center;
 }
 
-.btn{
-  position: absolute;
+.btn {
+  display: flex;
+
   bottom: 50px;
 }
 
-.btn button {
+#btn-iniciar, #btn-devolver {
   font-size: 16px;
   background: #0a3871;
   width: 210px;
@@ -44,11 +134,11 @@ header {
   
 }
 
-#iniciar-juego {
+#btn-iniciar {
   color: #ffffff;
 }
 
-#btn2 {
+#btn-devolver {
   background: #e5e5e5;
   color: #0a3871;
 }
@@ -61,13 +151,12 @@ header {
   color: #0f161b;
 }
 
-.linkedin,
-.github {
-  margin: 0 0 0 10px;
+.linkedin, .github{
+  margin: 0 0 0 10px; 
   color: #0A3871;
 }
 
-.linkedin:hover,
-.github:hover {
+.linkedin:hover, .github:hover{
   color: #ffffff;
 }
+
