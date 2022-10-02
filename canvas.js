@@ -13,7 +13,7 @@ function divujarLinea() {
   tablero.lineWidth = 6;
   tablero.lineCap = "round";
   tablero.lineJoin = "round";
-  tablero.fillStyle = "#F3F5F6";
+  tablero.fillStyle = "#F3F5F6"; 
   tablero.strokeStyle = "#5e6ce8";
 
   let anchura = 600 / palabraSecreta.length;

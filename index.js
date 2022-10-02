@@ -8,7 +8,7 @@ let palabras = [
   "GITHUB",
   "CHECK",
   "HOUSE",
-];
+]; 
 let canvas = document.querySelector("canvas");
 let tablero = document.querySelector(".horca").getContext("2d");
 let botonGuardar = document.getElementById("btn-agregar-palabra");
