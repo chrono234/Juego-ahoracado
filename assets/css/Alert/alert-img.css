@@ -1,0 +1,10 @@
+.alert__img{
+    align-items: center;
+    color: #495057;
+    display: flex;
+    font-family:'Inter';
+    font-size: 12px;
+    font-style: normal;
+    gap: 5px;
+    margin: 0 0 0 10px;
+  }

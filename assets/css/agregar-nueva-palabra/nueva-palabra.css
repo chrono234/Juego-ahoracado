@@ -1,0 +1,10 @@
+.nuevaPalabra {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    justify-content:flex-end;
+    margin-top: 45px;
+    height: calc(73.9vw - 39vw);
+}
+

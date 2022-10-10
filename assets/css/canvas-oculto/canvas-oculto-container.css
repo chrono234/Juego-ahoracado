@@ -1,0 +1,9 @@
+.canvasOculto__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 21.2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+

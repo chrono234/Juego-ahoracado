@@ -1,0 +1,8 @@
+.alert__signal{
+    height: 12px;
+    width: 12px;
+  }
+  
+  .alert__signal:hover{
+    cursor: help;
+  }
