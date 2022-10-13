@@ -1,0 +1,22 @@
+.alert__container{
+    align-items: center;
+    color: #495057;
+    display: flex;
+    font-family:'Inter';
+    font-size: 12px;
+    font-style: normal;
+    gap: 5px;
+    margin: 0 0 0 10px;
+  }
+
+  @media screen and (min-width: 0) {
+    .alert__container {
+      margin-right: 12.9rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .alert__container {
+    margin-right: 31.5rem;
+  }
+}

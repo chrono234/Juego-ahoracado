@@ -1,5 +1,20 @@
 .btn {
   bottom: 50px;
   display: flex;
+  flex-direction: row;
+
 }
+
+@media screen and (min-width: 0) {
+  .btn {
+  flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+  flex-direction: row;
+  }
+}
+
 

@@ -3,6 +3,11 @@
   display: flex;
   font-size: 13px;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 4.5vh;
 }
 
+@media screen and (min-width: 0) {
+  .footer {
+    font-size: 1.5vh;
+  }
+}

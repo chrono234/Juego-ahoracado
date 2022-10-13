@@ -7,3 +7,10 @@
     margin-top: 45px;
   }
 
+  @media screen and (min-width: 0) {
+    .canvasOculto {
+      flex-direction: column;
+      height: calc(100vh - 9rem);
+    }
+  }
+

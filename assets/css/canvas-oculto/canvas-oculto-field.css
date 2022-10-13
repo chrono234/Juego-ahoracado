@@ -1,5 +1,13 @@
-.CanvasOculto__field{
-    display: flex;
-    justify-content: center;
+
+
+  @media screen and (min-width: 0) {
+    .CanvasOculto__field {
+      width: calc(100vw - 3rem);
+    }
   }
 
+  @media screen and (min-width: 768px) {
+    .CanvasOculto__field{
+    } 
+  }
+  

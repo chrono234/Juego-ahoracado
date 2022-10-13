@@ -7,7 +7,7 @@
   height: 40px;
   margin: 5px;
   margin-bottom: 10px;
-  width: 210px;
+  width: 18rem;
 }
 
 .btn__button.primero {
@@ -18,5 +18,18 @@
   background: #e5e5e5;
   color: #0a3871;
 }
+
+@media screen and (min-width: 0) {
+  .btn__button {
+  width: 18rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn__button.primero, .btn__button.segundo {
+    margin-top: 1rem;
+  }
+}
+
 
 

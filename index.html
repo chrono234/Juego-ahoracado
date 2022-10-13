@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/assets/css/main/main-button-add-word.css" />
     <link rel="stylesheet" href="/assets/css/agregar-nueva-palabra/nueva-palabra.css"/>
     <link rel="stylesheet" href="/assets/css/agregar-nueva-palabra/nueva-palabra-input.css"/>
-    <link rel="stylesheet" href="/assets/css/Alert/alert-img.css" />
+    <link rel="stylesheet" href="/assets/css/Alert/alert-container.css" />
     <link rel="stylesheet" href="/assets/css/Alert/alert-signal.css" />
     <link rel="stylesheet" href="/assets/css/btn/btn.css" />
     <link rel="stylesheet" href="/assets/css/btn/btn-link.css" />
@@ -32,7 +32,7 @@
     <!----------------PAGINA INICIAL----------------->
     <section class="main" id="btn-home">
       <a class="main__link" href="#input-lector">
-        <button class="main__button" id="btn-inicio" onclick="iniciarJuego()">
+        <button class="main__button home" id="btn-inicio" onclick="iniciarJuego()">
           Iniciar Juego
         </button></a>
       <a class="main__link" href="#nueva-palabra">
@@ -55,15 +55,17 @@
           maxlength="8"
           size="14"/>
       </div>
+
       <div class="alert">
-        <div class="alert__img" title="Max. de 8 letras">
+        <div class="alert__container" title="Max. de 8 letras">
           <img
             class="alert__signal"
             src="/assets/Img/señal-alerta.png"
             alt="señal de alerta"/>
           <h2>Max. de 8 letras</h2>
         </div>
-        <div class="btn">
+      </div>
+        <nuevaPalabra class="btn">
           <a class="btn__link" href="#input-lector"
             ><button
               class="btn__button primero"
@@ -77,10 +79,10 @@
               class="btn__button segundo"
               id="btn-cancelar"
               onclick="irInicio()">
-              cancelar
+              Cancelar
             </button></a>
-        </div>
-      </div>
+        </nuevaPalabra>
+      
     </section>
     <!----------------PAGINA JUEGO AHORCADO----------------->
     <section class="canvasOculto" id="aparece-horca">
@@ -88,10 +90,11 @@
         <canvas
           class="CanvasOculto__field"
           id="horca"
-          width="700"
+          width="660"
           height="400">
         </canvas>
       </div>
+
       <div class="btn" id="btn-nueva-palabra">
         <a class="btn__link">
           <button
