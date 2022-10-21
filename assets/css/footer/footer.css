@@ -1,13 +1,18 @@
 .footer {
+  align-items: center;
   color: #0f161b;
   display: flex;
-  font-size: 13px;
+  font-size:xx-small;
   justify-content: center;
-  margin-top: 4.5vh;
+  margin-top: 6vh;
 }
 
-@media screen and (min-width: 0) {
-  .footer {
-    font-size: 1.5vh;
-  }
-}
+
+
+
+
+
+
+
+
+

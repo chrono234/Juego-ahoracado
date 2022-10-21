@@ -1,17 +1,16 @@
 .main__button.home__add__word {
   background: #e5e5e5;
-  border-radius: 30px;
+  border-radius: 15px;
   color: #0a3871;
-  height: 15rem;
-  width: 20rem;
-  max-width: 14rem;
-  max-height: 3rem;
+  min-width: 224px;
+  max-width: 15rem;
+  max-height: 2.5rem;
 }
 
-@media screen and (min-width: 0) {
+@media screen and (min-width: 1024) {
   .main__button.home__add__word {
-    width: 43vw;
-    height: 10vw;
+    max-width: 14rem;
+    max-height: 3rem;
   }
 }
 

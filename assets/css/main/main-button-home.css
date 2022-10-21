@@ -1,22 +1,16 @@
 .main__button {
   background: #0a3871;
   border: none;
+  border-radius: 19px;
   color: white;
-  font-size: 15px;
-  height: 90px;
+  font-size: 1vw;
+  height: 20vw;
   margin: 10px;
+  max-height: 78px;
+  max-width: 288px;
+  min-width: 224px;
   width: 80vw;
-  height: 8vw;
 }
 
-@media screen and (min-width: 0) {
-  .main__button {
-    border-radius: 19px;
-    width: 50vw;
-    height: 15vw;
-    max-height: 5rem;
-    max-width: 15rem;
-  }
-}
 
 

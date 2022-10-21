@@ -1,13 +1,9 @@
 .cabecera__logo {
+  height: 5vh;
   margin: 0 0 0 10px;
+  width: 5vh;
 }
 
-@media screen and (min-width: 0) {
-  .cabecera__logo {
-    width: 5vh;
-    height: 5vh;
-  }
-}
 
 @media screen and (min-width: 1024) {
   .cabecera__logo {

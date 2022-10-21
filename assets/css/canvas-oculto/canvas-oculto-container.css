@@ -1,13 +1,8 @@
 .canvasOculto__container {
-    display: flex;
-    height: 21.2rem;
-    justify-content: center;
-    margin-bottom: 2rem;
-    width: calc(700px - 385px);
-  }
-  
-
-@media screen and (min-width: 0) {
-  .canvasOculto__container {
-    margin-left: 10px;
-} }
+  display: flex;
+  height: 21.2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-left: 10px;
+  width: calc(700px - 385px);
+}

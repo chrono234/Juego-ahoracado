@@ -1,15 +1,11 @@
 .nuevaPalabra {
   align-items: center;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   gap: 0.2rem;
+  height: calc(110vh - 10rem);
+  justify-content: flex-end;
   max-height: 83.5vh;
   }
 
-@media screen and (min-width: 0) {
-  .nuevaPalabra {
-    flex-direction: column;
-    height: calc(100vh - 6.2rem);
-  }
-}
 

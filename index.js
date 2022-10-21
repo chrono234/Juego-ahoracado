@@ -1,4 +1,4 @@
-//¡selectores
+//¡selectors
 let palabras = [
   "ALURA",
   "ORACLE",
@@ -8,13 +8,16 @@ let palabras = [
   "GITHUB",
   "CHECK",
   "HOUSE",
-]; 
+];
 let canvas = document.querySelector("canvas");
 let tablero = document.getElementById("horca").getContext("2d");
 let botonGuardar = document.getElementById("btn-agregar-palabra");
 let palabraSecreta = "";
 let letras = [];
+let letraElegida = [];
 let errores = 7;
+
+
 
 //¡default-start
 document.getElementById("nueva-palabra").style.display = "none";
@@ -24,10 +27,9 @@ document.getElementById("aparece-horca").style.display = "none";
 function escojerPalabraSecreta() {
   let palabra = palabras[Math.floor(Math.random() * palabras.length)];
   palabraSecreta = palabra;
-  //console.log(palabraSecreta); test
 }
 
-//¡teclado-letra-random
+//¡verify-keyboard-letter
 function comprobarLetra(key) {
   let estado = false;
   if (
@@ -35,48 +37,43 @@ function comprobarLetra(key) {
     (key <= 90 && letras.indexOf(key))
   ) {
     letras.push(key);
-    //console.log(key); test
     return estado;
   } else {
     estado = true;
-    //console.log(key); test
     return estado;
   }
 }
 
-//¡Añadir-letra-abajo
+//¡Add-incorrect-letter
 function anadirLetraIncorrecta() {
   errores -= 1;
-  console.log(errores);
 }
 
-//¡iniciar-juego
+//¡start-game
 function iniciarJuego() {
   document.getElementById("btn-home").style.display = "none";
   document.getElementById("nueva-palabra").style.display = "none";
   document.getElementById("aparece-horca").style.display = "flex";
-
   escojerPalabraSecreta();
   divujarCanvas();
   divujarLinea();
   document.onkeydown = (e) => {
     let letra = e.key.toUpperCase();
-    if (comprobarLetra(letra) && palabraSecreta.includes(letra)) {
-      for (let i = 0; i < palabraSecreta.length; i++) {
-        if (palabraSecreta[i] === letra) {
-          escribirLetraCorrecta(i)
-          console.log(gen.next().value);
-          ganador();
+          if (comprobarLetra(letra) && palabraSecreta.includes(letra)) {
+            for (let i = 0; i < palabraSecreta.length; i++) {
+              if (palabraSecreta[i] === letra) {
+                escribirLetraCorrecta(i);
+                verificarVencedor(letra)
+              }
+            }
+          }else {
+            anadirLetraIncorrecta(letra);
+            escribirLetraIncorrecta(letra, errores);
+          } 
         }
       }
-    } else {
-      anadirLetraIncorrecta(letra);
-      escribirLetraIncorrecta(letra, errores);
-    }
-  };
-}
 
-//¡agregar-nueva-palabra
+//¡add-the-new-word
 function agregarPalabra() {
   let palabraNueva = document.getElementById("palabra").value;
   palabras.push(palabraNueva.toUpperCase());
@@ -96,59 +93,51 @@ botonGuardar.addEventListener("click", () => {
   AmacenarListaPalabrasEnNavegador();
 });
 
-//¡ir-de-inicio-a-palabra
+//¡go-to-menu-add-word
 function irPalabra() {
   document.getElementById("btn-home").style.display = "none";
   document.getElementById("nueva-palabra").style.display = "flex";
   document.getElementById("aparece-horca").style.display = "none";
 }
 
-//¡agregar-palabra-e-ir-juego
+//¡add-word-and-goes-to-game
 function addIrJuego() {
   document.getElementById("btn-home").style.display = "none";
   document.getElementById("nueva-palabra").style.display = "none";
   document.getElementById("aparece-horca").style.display = "flex";
 }
 
-//¡ir-inicio
+//¡go-to-start
 function irInicio() {
   document.getElementById("btn-home").style.display = "flex";
   document.getElementById("nueva-palabra").style.display = "none";
   document.getElementById("aparece-horca").style.display = "none";
 }
 
-//¡Validar-Ganador-recargar
-var contador = -1;
-function* validarEntrada() {
-  while (contador < 7) yield contador++;
-}
-
-var gen = validarEntrada();
-console.log(gen.next().value);
-
-function ganador() {
-  if (contador == palabraSecreta.length) {
-    setTimeout(() => {
-      ganadorJuego();
-      recargar();
-    }, 500);
+//¡Validate-the-winnner
+function verificarVencedor(letra) {
+  letraElegida.push(letra.toUpperCase());
+  if (letraElegida.length == palabraSecreta.length) {
+    ganadorJuego();
+    recargar();
   }
 }
 
+//¡reload
 function recargar() {
   setTimeout(() => {
-    location.reload();
-  }, 1000);
+    location.reload(addIrJuego());
+  }, 2000);
 }
 
-//¡derrota
+//¡message-defeat at the end
 function derrotaReinicio() {
   setTimeout(() => {
     alert("Fin del juego! " + "La palabra era: " + palabraSecreta);
   }, 500);
 }
 
-//¡cierre-reinicio
+//¡close-restart
 function reinicio() {
   setTimeout(() => {
     0, 0, (canvas.width = canvas.width);
@@ -158,7 +147,7 @@ function reinicio() {
   }, 800);
 }
 
-//¡funcion-ahorcado
+//¡draw-hanging-man
 function dibujoHombreAhorcado(caso) {
   switch (caso) {
     case 1:
@@ -188,26 +177,42 @@ function dibujoHombreAhorcado(caso) {
   }
 }
 
-/*CODE INPROVEMENT NOT APPLY, ON WORK
+//CODE INPROVEMENT NOT APPLY, ON WORK
 
-Función para no repetir palabras
-función para no
-
+//Función para no repetir palabras
+/*
 const divujo= 1;
 
 const dibujoHombreAhorcado = {
-  1:divujarPiso(),
-  2:divujarLineaRecta(),
-  3:divujarLineaHorizontal(),
-  4:divujarhorca(),
-  5:divujarCara(),
-  6:divujarCuerpo(),
-  7:divujarBrazos(),
-  8:divujarPiernas(),
+  piso:divujarPiso(),
+  lineaVertical:divujarLineaRecta(),
+  lineaHorizontal:divujarLineaHorizontal(),
+  horca:divujarhorca(),
+  cara:divujarCara(),
+  cuerpo:divujarCuerpo(),
+  brazos:divujarBrazos(),
+  piernas:divujarPiernas()
 }
-let canvas =2
 
-console.log(divujoObj[divujo] || 1 );
+const partesDelAhorcado = [
+  "piso",
+  "lineaVertical",
+  "lineaHorizontal",
+  "horca",
+  "cara",
+  "cuerpo",
+  "brazos",
+  "piernas"
+]
 
+function* gen() {
+  for (let i = 0; i < dibujoHombreAhorcado.length; i++) {
+      console.log(partesDelAhorcado [i] );
+     yield;
+  }
+}
 
-console.log(canvas);*/
+let generadora = gen();
+generadora.next();
+
+*/

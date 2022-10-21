@@ -1,14 +1,7 @@
 .main {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 50px;
-
-}
-
-@media screen and (min-width: 0) {
-  .main {
-   height: calc(100vh - 6.4rem);
-  }
+align-items: center;
+display: flex;
+flex-direction: column;
+height:calc(100vh - 17vh);
+justify-content: center;
 }

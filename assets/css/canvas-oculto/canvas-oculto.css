@@ -1,16 +1,9 @@
 .canvasOculto {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 420px;
-    justify-content: center;
-    margin-top: 45px;
-  }
-
-  @media screen and (min-width: 0) {
-    .canvasOculto {
-      flex-direction: column;
-      height: calc(100vh - 9rem);
-    }
-  }
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 9rem);
+  justify-content: center;
+  margin-top: 45px;
+}
 
