@@ -34,7 +34,7 @@ function comprobarLetra(key) {
   let estado = false;
   if (
     (key >= 65 && letras.indexOf(key)) ||
-    (key <= 90 && letras.indexOf(key))
+    (key <= 90 && letras.indexOf(key) && typeof keyCode === "number")
   ) {
     letras.push(key);
     return estado;
