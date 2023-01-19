@@ -177,42 +177,4 @@ function dibujoHombreAhorcado(caso) {
   }
 }
 
-//CODE INPROVEMENT NOT APPLY, ON WORK
 
-//Función para no repetir palabras
-/*
-const divujo= 1;
-
-const dibujoHombreAhorcado = {
-  piso:divujarPiso(),
-  lineaVertical:divujarLineaRecta(),
-  lineaHorizontal:divujarLineaHorizontal(),
-  horca:divujarhorca(),
-  cara:divujarCara(),
-  cuerpo:divujarCuerpo(),
-  brazos:divujarBrazos(),
-  piernas:divujarPiernas()
-}
-
-const partesDelAhorcado = [
-  "piso",
-  "lineaVertical",
-  "lineaHorizontal",
-  "horca",
-  "cara",
-  "cuerpo",
-  "brazos",
-  "piernas"
-]
-
-function* gen() {
-  for (let i = 0; i < dibujoHombreAhorcado.length; i++) {
-      console.log(partesDelAhorcado [i] );
-     yield;
-  }
-}
-
-let generadora = gen();
-generadora.next();
-
-*/
