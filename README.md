@@ -1,9 +1,49 @@
-# Juego-ahoracado
+# Hangman in javascript
 
-hanged-man build in css, html and javascript.
+## Description 📑
 
-I had some issues in the javascript, I try to improve that and raise the level with every project.
-
+Game with javascript
 I used the BEM standard in CSS and want to add more updates in the javascript files of course, right now I am focused in learn better the tecnologies and then apply it correctly in this projects.
 
-I am very exited because I have learned a lot in this months and I cannot imagine what will learn in the future, this is just the begining.
+## Acknowledgements
+
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ 
+ ![background](https://raw.githubusercontent.com/chrono234/Juego-ahoracado/main/assets/Img/readme0.png)
+ 
+## ¿Why did I learned? 🙇🏻 
+
+* HTML5
+* CSS
+* logic 
+* git
+ 
+ ![image](https://raw.githubusercontent.com/chrono234/Juego-ahoracado/main/assets/Img/readme1.png)
+ 
+ ![image2](https://raw.githubusercontent.com/chrono234/Juego-ahoracado/main/assets/Img/readme2.png)
+
+## Documentation 📑
+
+[mozilla-developer](https://developer.mozilla.org/es/)
+
+
+## 🛠 Skills
+* Orientation to objects
+* HTML
+* CSS
+* Javascript
+
+## Instalation
+
+This project does not need installation. Simply open de folder and make doble click in the folder.
+
+## Autor ✒️
+
+- [Jairo](https://github.com/chrono234)
+
+## Licence 📄
+MIT Public License v3.0
+
+Do not use Commercially.
